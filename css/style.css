@@ -147,6 +147,7 @@ button {
 /*  -----------------MAIN------------------------ */
 .hero {
   background-color: var(--hero-footer-bg-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/bg-hero.jpg);
   padding: 200px 0;
   text-align: center;
 }
@@ -183,7 +184,29 @@ button {
 .advantage-list {
   display: flex;
 }
-
+.advantage-item::before{
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-color: #F5F4FA;
+  background-repeat: no-repeat;
+  background-size: 70px 70px;
+  background-position: center;
+  margin-bottom: 30px;
+}
+.antena::before {
+  background-image: url(../images/antenamin.png);
+}
+.clock::before{
+  background-image: url(../images/clockmin.png);
+}
+.diagramm::before{
+  background-image: url(../images/diagrammin.png);
+}
+.astronaut::before{
+  background-image: url(../images/astronautmin.png);
+}
 .advantage-title {
   margin-bottom: 10px;
   font-weight: 700;
@@ -272,6 +295,25 @@ button {
   text-align: center;
   color: var(--second-text-color);
 }
+
+.team-soc-list{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.clients-title{
+  text-align: center;
+}
+.clients-list{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.clients-item{
+
+}
+
+
 
 /* -----FOOTER----- */
 
