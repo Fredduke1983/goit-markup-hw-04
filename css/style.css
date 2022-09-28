@@ -30,7 +30,7 @@ img {
 body {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -84,7 +84,7 @@ button {
 
 .logo {
   display: inline-block;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -147,7 +147,15 @@ button {
 /*  -----------------MAIN------------------------ */
 .hero {
   background-color: var(--hero-footer-bg-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/bg-hero.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg-heromin.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1600px;
+  margin: 0 auto;
   padding: 200px 0;
   text-align: center;
 }
@@ -184,12 +192,12 @@ button {
 .advantage-list {
   display: flex;
 }
-.advantage-item::before{
+.advantage-item::before {
   content: "";
   display: block;
   width: 270px;
   height: 120px;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   background-repeat: no-repeat;
   background-size: 70px 70px;
   background-position: center;
@@ -198,13 +206,13 @@ button {
 .antena::before {
   background-image: url(../images/antenamin.png);
 }
-.clock::before{
+.clock::before {
   background-image: url(../images/clockmin.png);
 }
-.diagramm::before{
+.diagramm::before {
   background-image: url(../images/diagrammin.png);
 }
-.astronaut::before{
+.astronaut::before {
   background-image: url(../images/astronautmin.png);
 }
 .advantage-title {
@@ -296,24 +304,48 @@ button {
   color: var(--second-text-color);
 }
 
-.team-soc-list{
+.team-soc-list {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-.clients-title{
+.team-soc-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* outline: 2px solid black; */
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.team-soc-item a {
+  color: #afb1b8;
+}
+.team-soc-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.team-soc-item:hover,
+.team-soc-icon:hover {
+  cursor: pointer;
+  fill: #fff;
+  background-color: #2196f3;
+}
+
+.instagram {
+}
+.clients-title {
   text-align: center;
 }
-.clients-list{
+.clients-list {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
-.clients-item{
-
+.clients-item {
 }
-
-
 
 /* -----FOOTER----- */
 
