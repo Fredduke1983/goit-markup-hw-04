@@ -383,6 +383,7 @@ button {
 .client-link:hover,
 .client-link:focus {
   color: #2196f3;
+  border-color: #2196f3;
 }
 
 /* -----FOOTER----- */
@@ -546,4 +547,44 @@ button {
 .portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.img-pos {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.astro,
+.ant,
+.dia {
+  width: 100px;
+  height: 100px;
+}
+.div-astro {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: tomato;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+  /*  Задаём значения перехода  */
+  transition-property: background-color;
+  transition-duration: 2000ms;
+  transition-timing-function: ease-in;
+}
+.ant {
+  position: absolute;
+  left: 200px;
+}
+.dia {
+  position: absolute;
+  left: 400px;
+}
+
+.div-astro:hover {
+  background-color: #fff;
 }
